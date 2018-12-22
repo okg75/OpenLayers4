@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+  <!-- 施設を表示するためのアイコン -->
+  <Style id="facilityIcon">
+    <IconStyle>
+      <Icon>
+        <href>http://192.168.11.5/olsample/img/facility.png</href>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+	    <color>000000ff</color>
+    </LabelStyle>
+  </Style>
+  <Style id="parkPolygon">
+    <LineStyle>
+      <width>1.5</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>7dff0000</color>
+    </PolyStyle>
+  </Style>
+  </Document>
+  <!-- 地理情報の設定 -->
+  <Placemark>
+      <name>江戸川区役所</name>
+      <visibility>0</visibility>
+      <description>江戸川区の区役所です。</description>
+      <styleUrl>#facilityIcon</styleUrl>
+      <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>139.868427, 35.706665,18</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+      <name>公園A</name>
+      <styleUrl>#parkPolygon</styleUrl>
+      <Polygon>
+          <extrude>1</extrude>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <outerBoundaryIs>
+              <LinearRing>
+                  <coordinates>
+                  139.87080738157306, 35.707456905345865,100
+                  139.8707215508846, 35.706446318988256,100
+                  139.8709897717861, 35.7064288949732,100
+                  139.87123653501547, 35.707456905345865,100
+                  </coordinates>
+              </LinearRing>
+          </outerBoundaryIs>
+      </Polygon>
+  </Placemark>
+  <Placemark>
+      <name>公園B</name>
+      <styleUrl>#parkPolygon</styleUrl>
+      <Polygon>
+          <extrude>1</extrude>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <outerBoundaryIs>
+              <LinearRing>
+                  <coordinates>
+                  139.87300679296538, 35.70762243120059,100
+                  139.87299606412932, 35.7073959220496,100
+                  139.87371489614532, 35.70735236252368,100
+                  139.87373635381743, 35.70758758368078,100
+                  </coordinates>
+              </LinearRing>
+          </outerBoundaryIs>
+      </Polygon>
+  </Placemark> 
+</kml>
